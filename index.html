@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Looping</title>
+  </head>
+  <body>
+    <div id="joblist"></div>
+
+    <script>
+      const list = ["Hello", "Hello", "Hello", "Hello", "Hello"];
+
+
+      for (let i = 0; i < list.length; i++) {
+        const headingLevel = i + 1;
+
+        const heading = document.createElement("h" + headingLevel);
+        heading.textContent = list[i] + " " + headingLevel;
+        document.getElementById("joblist").appendChild(heading);
+      }
+    </script>
+  </body>
+</html>
